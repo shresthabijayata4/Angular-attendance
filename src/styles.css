@@ -778,6 +778,10 @@ a:hover {
 .p6{
     padding: 6px;
 }
+.plr-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 .text-center{
     text-align: center;
