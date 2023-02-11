@@ -10,6 +10,11 @@ import { RegisterComponent } from './register/register.component';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
+// import { ToastrModule } from 'ngx-toastr';
+import { FormsModule } from '@angular/forms';
+
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AttendanceSummaryComponent } from './attendance-summary/attendance-summary.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +22,13 @@ import { environment } from 'src/environments/environment';
     LoginComponent,
     HomePageComponent,
     RegisterComponent,
+    AttendanceSummaryComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // ToastrModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],

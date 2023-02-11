@@ -89,6 +89,8 @@
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                     placeholder="Enter email"
+                    name="email"
+                    [(ngModel)]="email"
                   />
                   <!-- <small id="emailHelp" class="form-text text-muted"
                     >We'll never share your email with anyone else.</small
@@ -101,6 +103,8 @@
                     class="form-control"
                     id="exampleInputPassword1"
                     placeholder="Password"
+                    name="password"
+                    [(ngModel)]="password"
                   />
                 </div>
                 <!-- <div class="form-check">
@@ -114,6 +118,7 @@
                   <button
                     type="submit"
                     class="btn btn-primary button-pad bg-theme white"
+                    (click)="login()"
                   >
                     Log In
                   </button>
@@ -121,7 +126,7 @@
                 <div class="d-flex justify-content-center pt30">
                   Don't have an account?<a
                     class="signup-tag plr-5 primary-color"
-                    href=""
+                    routerLink="/register"
                     >Sign up</a
                   >
                 </div>

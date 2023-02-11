@@ -121,12 +121,16 @@
                 <button
                   type="button"
                   class="btn btn-success btn-circle btn-xl checkin-button"
+                  [ngClass]="{ disabled: disableCheckinButton }"
+                  (click)="getCheckinTime()"
                 >
                   Check in
                 </button>
                 <button
                   type="button"
                   class="btn btn-success btn-circle btn-xl checkout-button disabled"
+                  [ngClass]="{ disabled: disableCheckoutButton }"
+                  (click)="getCheckoutTime()"
                 >
                   Check out
                 </button>
