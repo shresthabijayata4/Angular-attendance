@@ -1,1 +1,838 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+
+
+
+.theme-faded{
+    background-color: hsl(262, 43%, 95%);
+}
+
+.dark-green{
+    color: #152f2e;
+}
+
+
+
+.bg-subfaded{
+    background-color: #C7B5E3;
+}
+.theme-subfaded{
+    color: #7246B9;
+}
+
+.bg-absent{
+    background-color: #fdbaba;
+}
+
+.bg-present{
+    background-color: #bdfac3;
+}
+.bg-late{
+    background-color: #FCF8AB;
+}
+
+.primary-color{
+    color: hsl(263, 49%, 42%) ;
+}
+
+.text-color{
+    color: #171024;
+}
+
+.green{
+    color: #bdfac3;
+}
+
+.yellow{
+    color: #FCF8AB;
+}
+
+.red{
+    color: #fdbaba;
+}
+
+.black{
+    color: #171024;
+}
+
+.placeholder-text{
+    color: #6C6969;
+}
+
+.calander-color{
+    color: #56BC32;
+}
+
+.bg-theme{
+    background-color: hsl(263, 49%, 42%);
+}
+
+.white{
+    color: white;
+}
+
+.border-color{
+    border-color: rgba(0,0,0,.125);
+}
+
+.cardbutton-border{
+    border-color: #C7B5E3;
+   
+}
+
+.p6{
+    padding: 6px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.ptb10{
+    padding: 10px 0px;
+}
+
+.padding-forminput{
+    padding: 8px 8px;
+}
+
+.pt30{
+    padding-top: 30px;
+}
+
+.pt20{
+    padding-top: 20px;
+}
+.pt10{
+    padding-top: 10px;
+}
+.pt90{
+    padding-top: 90px;
+}
+
+.pt50{
+    padding-top: 50px;
+}
+
+.p20{
+    padding: 20px;
+}
+
+.p10{
+    padding: 10px;
+}
+
+.p5{
+    padding: 5px;
+}
+
+
+
+.button-pad{
+    padding: 8px 30px;
+}
+
+.buttonfilter-pad{
+    padding: 8px 30px;
+}
+
+.button-checkpad{
+    padding: 8px 15px;
+}
+
+
+
+body{
+    background-color: #fcfbfe;
+    color: #171024;
+
+
+}
+
+.logo__logoimage{
+    width: 15%;
+}
+
+.wrapper_container{
+  padding: 10px;
+}
+.school-logo{
+    text-align: center;
+
+}
+.school-logo img{
+    width: 25%;
+}
+.school-heading{
+    text-align: center;
+    font-weight: bold;
+}
+.login-form{
+    margin-top: 20px;
+    padding: 10px;
+} */
+
+/* @font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../webfonts/fa-brands-400.eot");
+    src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
+  }
+  
+  .fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+  } */
+
+  /* a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: none;
+} */
+  .floatr {
+    float: right;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.theme-faded, .class-card {
+  background-color: #f1edf8;
+}
+
+.dark-green {
+  color: #152f2e;
+}
+
+body {
+  color: #171024;
+  background-color: #fcfbfe;
+}
+
+.bg-subfaded {
+  background-color: #C7B5E3;
+}
+
+.theme-subfaded {
+  color: #7246B9;
+}
+
+.bg-absent, .card-absenttag, .card-absentreport, .report-summary .report-summary__container .container__card-row .card-row__absent .absent__card {
+  background-color: #fdbaba;
+}
+
+.bg-present, .card-presenttag, .card-presentreport, .report-summary .report-summary__container .container__card-row .card-row__present .present__card {
+  background-color: #bdfac3;
+}
+
+.bg-late, .card-latetag, .report-summary .report-summary__container .container__card-row .card-row__late .late__card {
+  background-color: #FCF8AB;
+}
+
+.primary-color, .active {
+  color: #5f37a0;
+}
+
+.text-color, h1, h5, a {
+  color: #171024;
+}
+
+.green {
+  color: #bdfac3;
+}
+
+.yellow {
+  color: #bdfac3;
+}
+
+.red {
+  color: #fdbaba;
+}
+
+.black, .class-card {
+  color: #171024;
+}
+
+.placeholder-text {
+  color: #6C6969;
+}
+
+.calander-color {
+  color: #56BC32;
+}
+
+.bg-theme, .button, .daily, .button-filter, .button-save, .button-checkattendance, .active-bgdaily {
+  background-color: #5f37a0;
+}
+
+.white, .menu-card {
+  color: white;
+}
+
+.border-color {
+  border-color: rgba(0, 0, 0, 0.125);
+}
+
+.cardbutton-border, .card-button {
+  border-color: #C7B5E3;
+}
+
+.transform50 {
+  transform: translateY(50%);
+}
+
+.transform40 {
+  transform: translateY(40%);
+}
+
+.p6, .dropdown-calander__reportinput {
+  padding: 6px;
+}
+
+.ptb10 {
+  padding: 10px 0px;
+}
+
+.padding-forminput, .form__input {
+  padding: 8px 8px;
+}
+
+.pt30, .wrapper .wrapper__container .bodywrap .login-container .login-form {
+  padding-top: 30px;
+}
+
+.pt20, .wrapper .wrapper__container .bodywrap .login-container .login-form form .form__password {
+  padding-top: 20px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pt90 {
+  padding-top: 90px;
+}
+
+.pt50 {
+  padding-top: 50px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.p5 {
+  padding: 5px;
+}
+
+.button-pad, .button, .daily, .button-save {
+  padding: 8px 30px;
+}
+
+.buttonfilter-pad, .button-filter {
+  padding: 4px 20px;
+}
+
+.button-checkpad, .button-checkattendance {
+  padding: 8px 15px;
+}
+
+.font-35 {
+  font-size: 35px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-work, h1, h5 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-15, .dropdown-grade__input, .dropdown-calander__input, .dropdown-calander__reportinput {
+  font-size: 15px;
+}
+
+.font-10 {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.text-center, .report-summary .report-summary__container .container__dropdown-row .dropdown-grade, .report-summary .report-summary__container .container__dropdown-row .dropdown-calander, .wrapper .wrapper__container .bodywrap .login-container .school-logo, .wrapper .wrapper__container .bodywrap .login-container .school-heading h1 {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.bold, .active, .report-summary .report-summary__container .container__card-row div {
+  font-weight: bold;
+}
+
+.white-font, .button, .daily, .button-filter, .button-save, .button-checkattendance {
+  color: #fff;
+}
+
+p {
+  font-size: 16px;
+}
+
+span {
+  font-size: 15px;
+}
+
+.daily-span {
+  font-size: 13px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.width-10 {
+  width: 10%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.width-30 {
+  width: 30%;
+}
+
+.width-25, .wrapper .wrapper__container .bodywrap .login-container .school-logo img {
+  width: 25%;
+}
+
+.width-17 {
+  width: 17%;
+}
+
+.width-15 {
+  width: 15%;
+}
+
+.width-35 {
+  width: 35%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.width-70 {
+  width: 70%;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+.width-100, .dropdown-grade__input, .dropdown-calander__input, .dropdown-calander__reportinput, .form__input {
+  width: 100%;
+}
+
+.width-13 {
+  width: 13%;
+}
+
+.width-10 {
+  width: 10%;
+}
+
+.width-90 {
+  width: 90%;
+}
+
+.br5, .button, .daily, .button-filter, .button-save, .button-checkattendance {
+  border-radius: 5px;
+}
+
+.bw1, .daily {
+  border-width: 1px;
+}
+
+.bw2, .card-button {
+  border-width: 2px;
+}
+
+.br10, .card-button {
+  border-radius: 10px;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.floatr {
+  float: right;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.button {
+  border: none;
+}
+
+.search-button {
+  float: right;
+  padding: 6px 10px;
+  margin-right: 16px;
+  background: #5f37a0;
+  font-size: 17px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button-filter {
+  border: none;
+}
+
+.button-save {
+  border: none;
+}
+
+.button-checkattendance {
+  border: none;
+}
+
+.card-attendance {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.card-daily {
+  width: 25%;
+  padding: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-presenttag {
+  width: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-absenttag {
+  width: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-latetag {
+  width: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-presentreport {
+  width: 40%;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-absentreport {
+  width: 40%;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu-card {
+  border-color: #5f37a0;
+}
+
+.card-button {
+  color: #5f37a0;
+}
+
+.class-card {
+  padding: 10px;
+}
+
+.dropdown {
+  width: 100%;
+}
+
+.dropdown-pad, .dropdown-grade__input, .dropdown-calander__input {
+  padding: 2px;
+}
+
+.dropdown-border, .dropdown-grade__input, .dropdown-calander__input, .dropdown-calander__reportinput {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-i, .report-summary .report-summary__container .container__card-row i {
+  font-size: 25px;
+}
+
+.search-input {
+  padding: 5px;
+  width: 25%;
+  font-size: 17px;
+  border: 1px solid #808080;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+.ul-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.table-summary .table-summary__card .title-row__attendance-card {
+  padding: 10px;
+}
+
+.table-summary .table-summary__card .title-row__attendance-card .attendance-date__number {
+  font-size: 30px;
+}
+
+.report-summary .report-summary__container .container__card-row .card__amount {
+  font-size: 2em;
+}
+
+.wrapper-dashboard .Dashboard-container .nav-bar .nav-bar__container .container__navbar-row .menu-container .menu-container__menu-row {
+  margin: 0;
+}
+
+.wrapper-dashboard .Dashboard-container .nav-bar .nav-bar__container .container__navbar-row .menu-container .menu-container__menu-row .menu-row__menu-items .menu-items__card i {
+  font-size: 18px;
+}
+
+.wrapper-dashboard .Dashboard-container .nav-bar .nav-bar__container .container__navbar-row .menu-container .menu-container__menu-row .menu-row__menu-items .menu-items__card span {
+  font-size: 15px;
+}
+
+.wrapper-dashboard .Dashboard-container .nav-bar .nav-bar__container .container__navbar-row .menu-container .menu-container__menu-row .menu-row__menu-notification {
+  transform: translateY(50%);
+}
+
+.wrapper-dashboard .Dashboard-container .nav-bar .nav-bar__container .container__navbar-row .menu-container .menu-container__menu-row .menu-row__menu-notification .menu-notification__container .container__bell a i {
+  color: #7246B9;
+  font-size: 17px;
+}
+
+.wrapper-dashboard .Dashboard-container .nav-bar .nav-bar__container .container__navbar-row .menu-container .menu-container__menu-row .menu-row__menu-notification .menu-notification__container .container__signout a i {
+  font-size: 17px;
+}
+
+
+.btn-circle.btn-xl {
+    width: 150px;
+    height: 150px;
+    padding: 20px ;
+    border-radius: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+.check-but-col button{
+    margin: 20px;
+  
+}
+
+.theme-faded{
+    background-color: hsl(262, 43%, 95%);
+}
+
+.dark-green{
+    color: #152f2e;
+}
+
+
+
+.bg-subfaded{
+    background-color: #C7B5E3;
+}
+.theme-subfaded{
+    color: #7246B9;
+}
+
+.bg-absent{
+    background-color: #fdbaba;
+}
+
+.bg-present{
+    background-color: #bdfac3;
+}
+.bg-late{
+    background-color: #FCF8AB;
+}
+
+.primary-color{
+    color: hsl(263, 49%, 42%) ;
+}
+
+.text-color{
+    color: #171024;
+}
+
+.green{
+    color: #bdfac3;
+}
+
+.yellow{
+    color: #FCF8AB;
+}
+
+.red{
+    color: #fdbaba;
+}
+
+.black{
+    color: #171024;
+}
+
+.placeholder-text{
+    color: #6C6969;
+}
+
+.calander-color{
+    color: #56BC32;
+}
+
+.bg-theme{
+    background-color: hsl(263, 49%, 42%);
+}
+
+.white{
+    color: white;
+}
+
+.border-color{
+    border-color: rgba(0,0,0,.125);
+}
+
+.cardbutton-border{
+    border-color: #C7B5E3;
+   
+}
+
+.p6{
+    padding: 6px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.ptb10{
+    padding: 10px 0px;
+}
+
+.padding-forminput{
+    padding: 8px 8px;
+}
+
+.pt30{
+    padding-top: 30px;
+}
+
+.pt20{
+    padding-top: 20px;
+}
+.pt10{
+    padding-top: 10px;
+}
+.pt90{
+    padding-top: 90px;
+}
+
+.pt50{
+    padding-top: 50px;
+}
+
+.p20{
+    padding: 20px;
+}
+
+.p10{
+    padding: 10px;
+}
+
+.p5{
+    padding: 5px;
+}
+
+
+
+.button-pad{
+    padding: 8px 30px;
+}
+
+.buttonfilter-pad{
+    padding: 8px 30px;
+}
+
+.button-checkpad{
+    padding: 8px 15px;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track me Attendance system</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="assets/vendors/fontawesome-free-5.15.2-web/css/all.css"
+    /> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <h1>Bootstrap worked properly!!</h1>
+    <button (click)="getCheckinTime()">Checkin</button>
+    <button (click)="getCheckoutTime()">Checkout</button> -->
+    <div class="wrapper-dashboard">
+      <div class="container Dashboard-container">
+        <!-- =====================================nav-bar start============================================= -->
+        <div class="nav-bar">
+          <div class="nav-bar__container">
+            <div class="row container__navbar-row">
+              <div class="col-md-3 image-container">
+                <a href="index.html">
+                  <img src="assets/images/logo1.png" class="width-60" />
+                </a>
+              </div>
+              <div class="col-md-9 menu-container">
+                <div class="row menu-container__menu-row">
+                  <div class="col-md-9 menu-row__menu-items">
+                    <div class="row">
+                      <div class="col-md-3 transform50">
+                        <a href="index.html" class="active"> Dashboard </a>
+                      </div>
+                      <!-- <div class="col-md-4 transform50">
+                        <a href="class.html"> Attendance Report </a>
+                      </div> -->
+                      <!-- <div class="col-md-4 transform50">
+                        <a href="class.html"> Attendance Summary </a>
+                      </div> -->
+                      <div class="col-md-5 transform40">
+                        <a href="attendance_class.html">
+                          <div class="card card-button p5">
+                            <div class="row menu-items__card">
+                              <div class="col-md-2">
+                                <i class="fas fa-user-check"></i>
+                              </div>
+                              <div class="col-md-10 text-center">
+                                <span>Attendance Summary</span>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 menu-row__menu-notification">
+                    <div class="row menu-notification__container">
+                      <div class="col-md-6 text-center container__bell">
+                        <a href="#">
+                          <i class="fas fa-bell"></i>
+                        </a>
+                      </div>
+                      <div class="col-md-6 text-end container__signout">
+                        <!-- <a href="#">
+                                              
+                                                <img src="./assets/images/logout2.png" class="width-40">
+                                            </a> -->
+
+                        <a href="">
+                          <span class="bold text-color">Sameer</span>
+                          <i class="fas fa-caret-down"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================================end navbar======================================== -->
+
+        <!-- ==================================================Cards start=================================================== -->
+        <div class="card-attendance">
+          <div class="container">
+            <div class="row greetings-container">
+              <div class="col text-center bold font-35 font-work pt30">
+                Hi, Sameer
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center pt10">
+                Here's an overview of
+                <b class="primary-color">Today's Attendance</b>
+              </div>
+            </div>
+            <div class="row pt30">
+              <div class="check-but-col text-center">
+                <button
+                  type="button"
+                  class="btn btn-success btn-circle btn-xl checkin-button"
+                >
+                  Check in
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-success btn-circle btn-xl checkout-button disabled"
+                >
+                  Check out
+                </button>
+              </div>
+              <!-- <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-circle btn-xl"
+                >
+                  Gray circular button
+                </button>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="col-md-9">
+                <div class="report-summary">
+                  <div class="container report-summary__container bw1">
+                    <div class="row container__card-row pt50">
+                      <div class="col-md-4 card-row__present">
+                        <div class="card card-attendance present__card p20">
+                          <div class="row">
+                            <div class="col present-icon text-end">
+                              <i class="fas fa-user-friends"></i>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col present-content pt20">
+                              <div class="card__amount">202</div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col present-content pt5">
+                              <div class="card__totaltitle">Total Present</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 card-row__absent">
+                        <div class="card card-attendance absent__card p20">
+                          <div class="row">
+                            <div class="col absent-icon text-end">
+                              <i class="fas fa-user-times"></i>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col present-content pt20">
+                              <div class="card__amount">20</div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col present-content pt5">
+                              <div class="card__totaltitle">Total Absent</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 card-row__late">
+                        <div class="card card-attendance late__card p20">
+                          <div class="row">
+                            <div class="col late-icon text-end">
+                              <img
+                                src="assets/images/late_comers.png"
+                                class="width-17"
+                              />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col present-content pt20">
+                              <div class="card__amount">30</div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col present-content pt5">
+                              <div class="card__totaltitle">Total Late</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="col-md-3">
+                <div class="attendance-piechart">
+                  <div class="container card ptb10">
+                    <div class="row">
+                      <canvas
+                        id="myChart"
+                        style="width: 100px; height: 100px"
+                      ></canvas>
+                      <script>
+                        var ctx = document
+                          .getElementById("myChart")
+                          .getContext("2d");
+                        var myDoughnutChart = new Chart(ctx, {
+                          type: "pie",
+                          data: {
+                            labels: ["Present", "Absent", "Late"],
+                            datasets: [
+                              {
+                                label: "# of Votes",
+                                data: [95, 20, 30],
+                                backgroundColor: [
+                                  "rgba(205, 254, 210)",
+                                  "rgba(252, 170, 170)",
+                                  "rgba(252, 248, 171)",
+                                ],
+                                borderColor: [
+                                  "rgba(205, 254, 210, 1)",
+                                  "rgba(252, 170, 170, 1)",
+                                  "rgba(252, 248, 171, 1)",
+                                ],
+
+                                borderWidth: 1,
+                              },
+                            ],
+                          },
+                          options: {
+                            // scales: {
+                            //     yAxes: [{
+                            //         ticks: {
+                            //             beginAtZero: true
+                            //         }
+                            //     }]
+                            // }
+                          },
+                        });
+                        //
+                        // var myDoughnutChart = new Chart(ctx, {
+                        //     type: 'doughnut',
+                        //     data: data,
+                        //     options: options
+                        // });
+                        // data = {
+                        //     datasets: [{
+                        //         data: [10, 20, 30]
+                        //     }],
+
+                        //     labels: [
+                        //         'Red',
+                        //         'Yellow',
+                        //         'Blue'
+                        //     ]
+                        // };
+                      </script>
+                    </div>
+                  </div>
+                  <div class="row"></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================================================cards end ==================================================== -->
+        <!-- ===================================================start attendance summary============================================== -->
+
+        <!-- ===================================================end attendance summary============================================== -->
+      </div>
+    </div>
+  </body>
+</html>
