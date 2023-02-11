@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AttendanceSummaryComponent } from './attendance-summary/attendance-summary.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -19,6 +20,11 @@ const routes: Routes = [
     path: 'register',
     pathMatch: 'full',
     component: RegisterComponent,
+  },
+  {
+    path: 'summary',
+    pathMatch: 'full',
+    component: AttendanceSummaryComponent,
   },
 ];
 

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,11 +9,12 @@ import { RegisterComponent } from './register/register.component';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
-// import { ToastrModule } from 'ngx-toastr';
+
 import { FormsModule } from '@angular/forms';
 
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { AttendanceSummaryComponent } from './attendance-summary/attendance-summary.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import { AttendanceSummaryComponent } from './attendance-summary/attendance-summ
     HomePageComponent,
     RegisterComponent,
     AttendanceSummaryComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,

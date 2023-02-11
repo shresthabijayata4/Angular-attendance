@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Time } from '@angular/common';
 import { Timestamp } from 'rxjs';
 import { TimestampService } from '../shared/timestamp.service';
+import { AuthService } from '../shared/auth.service';
 
 @Component({
   selector: 'app-home-page',
@@ -17,7 +18,7 @@ export class HomePageComponent implements OnInit {
   currentDate: any;
   disableCheckinButton: boolean = true;
   disableCheckoutButton: boolean = true;
-  constructor(private timestamp: TimestampService) {}
+  constructor(private timestamp: TimestampService, private auth: AuthService) {}
 
   ngOnInit(): void {
     // this.timestamp.getCheckinData().subscribe((checkinData) => {
