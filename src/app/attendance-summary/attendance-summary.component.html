@@ -1,1 +1,29 @@
 <app-nav-bar> </app-nav-bar>
+<div class="summary-wrapper">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Check in</th>
+        <th scope="col">Check out</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-template *ngFor="let status of statusDetails">
+        <tr>
+          <th scope="row">{{ status.date }}</th>
+          <!-- <td>status.checkin</td>
+          <td>status.checkout</td> -->
+          <td>{{ status.checkin }}</td>
+        </tr>
+      </ng-template>
+      <tr>
+        <th scope="row">1</th>
+        <!-- <td>status.checkin</td>
+        <td>status.checkout</td> -->
+        <td>hello</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

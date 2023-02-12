@@ -16,8 +16,8 @@ export class HomePageComponent implements OnInit {
 
   public CheckinoutDetails: any = [];
   currentDate: any;
-  disableCheckinButton: boolean = true;
-  disableCheckoutButton: boolean = true;
+  disableCheckinButton: boolean = false;
+  disableCheckoutButton: boolean = false;
   constructor(private timestamp: TimestampService, private auth: AuthService) {}
 
   ngOnInit(): void {
@@ -38,16 +38,30 @@ export class HomePageComponent implements OnInit {
     let month = this.todayDate.getMonth() + 1;
     let year = this.todayDate.getFullYear();
     this.currentDate = `${day}-${month}-${year}`;
+    this.todayCheckinTime =
+      this.todayDate.getHours() + ':' + this.todayDate.getMinutes();
     this.timestamp.getCheckinData().subscribe((checkinData) => {
       checkinData.forEach((datacheck) => {
-        if (datacheck.date == this.currentDate && datacheck.checkin) {
+        // if (datacheck.date == this.currentDate && datacheck.checkin) {
+        //   this.disableCheckinButton = true;
+        //   if (datacheck.checkout) {
+        //     this.disableCheckoutButton = true;
+        //   }
+        // } else {
+        //   this.disableCheckinButton = false;
+        // }
+        if (datacheck.date !== this.currentDate && this.todayCheckinTime > 18) {
+          this.CheckinoutDetails = {
+            checkin: '-',
+            checkout: '-',
+            date: this.currentDate,
+            status: 'Absent',
+          };
+          this.timestamp.checkindata(this.CheckinoutDetails);
           this.disableCheckinButton = true;
-          if (datacheck.checkout) {
-            this.disableCheckoutButton = true;
-          }
-        } else {
-          this.disableCheckinButton = false;
+          this.disableCheckoutButton = false;
         }
+
         // if (datacheck.date == this.currentDate && datacheck.checkin) {
         //   this.disableCheckoutButton = true;
         // }
@@ -70,7 +84,7 @@ export class HomePageComponent implements OnInit {
 
     this.todayCheckinTime =
       this.todayDate.getHours() + ':' + this.todayDate.getMinutes();
-    if (this.todayDate.getHours < 10 && this.todayDate.getHours > 18) {
+    if (this.todayDate.getHours < 12 && this.todayDate.getHours > 18) {
       alert(
         'You cannot Checkin at this time, please checkin between 10am and 6pm'
       );
@@ -78,6 +92,7 @@ export class HomePageComponent implements OnInit {
       this.CheckinoutDetails = {
         checkin: this.todayCheckinTime,
         date: this.currentDate,
+        status: 'Present',
       };
       this.timestamp.checkindata(this.CheckinoutDetails);
       this.disableCheckinButton = true;
@@ -95,6 +110,7 @@ export class HomePageComponent implements OnInit {
       this.CheckinoutDetails = {
         checkout: this.todayCheckinTime,
         date: this.currentDate,
+        status: 'Present',
       };
       this.timestamp.checkindata(this.CheckinoutDetails);
       this.disableCheckinButton = true;
