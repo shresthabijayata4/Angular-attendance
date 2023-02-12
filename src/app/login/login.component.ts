@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
   login() {
-    debugger;
     if (this.email == '') {
       alert('please enter email');
       return;

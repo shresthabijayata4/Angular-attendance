@@ -14,7 +14,6 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {}
 
   register() {
-    debugger;
     if (this.email == '') {
       alert('please enter email');
       return;

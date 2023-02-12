@@ -73,7 +73,6 @@ export class HomePageComponent implements OnInit {
     });
   }
   public getCheckinTime() {
-    debugger;
     this.todayDate = new Date();
     let day = this.todayDate.getDate();
     let month = this.todayDate.getMonth() + 1;
@@ -84,7 +83,7 @@ export class HomePageComponent implements OnInit {
 
     this.todayCheckinTime =
       this.todayDate.getHours() + ':' + this.todayDate.getMinutes();
-    if (this.todayDate.getHours < 12 && this.todayDate.getHours > 18) {
+    if (this.todayDate.getHours > 9 && this.todayDate.getHours > 18) {
       alert(
         'You cannot Checkin at this time, please checkin between 10am and 6pm'
       );

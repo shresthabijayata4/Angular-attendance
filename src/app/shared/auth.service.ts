@@ -13,7 +13,6 @@ export class AuthService {
   ) {}
 
   login(email: string, password: string) {
-    debugger;
     this.fireauth.signInWithEmailAndPassword(email, password).then(
       () => {
         localStorage.setItem('token', 'true');
@@ -56,5 +55,9 @@ export class AuthService {
         alert(err.message);
       }
     );
+  }
+
+  public authenticated() {
+    return localStorage.getItem('token') === 'true';
   }
 }
