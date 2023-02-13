@@ -83,7 +83,7 @@ export class HomePageComponent implements OnInit {
 
     this.todayCheckinTime =
       this.todayDate.getHours() + ':' + this.todayDate.getMinutes();
-    if (this.todayDate.getHours > 9 && this.todayDate.getHours > 18) {
+    if (this.todayCheckinTime > '9:00' && this.todayDate.getHours > '18:00') {
       alert(
         'You cannot Checkin at this time, please checkin between 10am and 6pm'
       );
@@ -103,7 +103,7 @@ export class HomePageComponent implements OnInit {
     this.todayCheckoutTime =
       this.todayDate.getHours() + ':' + this.todayDate.getMinutes();
 
-    if (this.todayDate.getHours < 18) {
+    if (this.todayDate.getHours < '18:00') {
       alert('You cannot Checkout before 6pm');
     } else {
       this.CheckinoutDetails = {

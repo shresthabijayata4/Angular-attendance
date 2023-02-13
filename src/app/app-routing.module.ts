@@ -12,23 +12,28 @@ const routes: Routes = [
   {
     path: 'login',
     pathMatch: 'full',
+    title: 'login',
     component: LoginComponent,
   },
   {
     path: '',
     pathMatch: 'full',
     canActivate: [AuthGuard],
+    title: 'Attendance System',
     component: HomePageComponent,
   },
   {
     path: 'register',
     pathMatch: 'full',
+    title: 'register',
+
     component: RegisterComponent,
   },
   {
     path: 'summary',
     pathMatch: 'full',
     canActivate: [AuthGuard],
+    title: 'summary',
 
     component: AttendanceSummaryComponent,
   },
